@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    
+    <title>Document</title>
+</head>
+<body>
+    ><script>
+        $(document).ready(
+            function(){
+                $("#alerta").hide ();
+                
+           }
+        //console.log("Hola Consola"));
+        $("#nombre").focusout(function(){
+            if($("#nombre").val().trim().lenght == 0 ){ 
+                mensaje = "debe ingresae el nombre";
+                $("#alerta").html(mensaje)
+                $("#alerta").show
+            }
+            //error
+            else{
+                $("#alerta").hide ();
+            //success
+            }
+         })   
+    </script>
+    
+</body>
+<h1> Hola Mundo</h1>
+<div class="container">
+    <div class="row">
+    <form action="post" id="formulario">
+    <div class="form-group">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" class="form-control">
+    </div>
+<div class="container">
+    <div class="form-group">
+        <label for="Email">Email</label>
+        <input type="email" id="email" class="form-control">
+    </div>
+    <input type=" submit" value="Enviar" class="btn btn.primary" id >
+    <input type=" submit" value="Eliminar" class="btn btn.primary" id >
+</form>
+</div>
+</div>
+</html>
